@@ -37,6 +37,11 @@ sudo modprobe w1-therm
 roomtemp=$(cat /sys/bus/w1/devices/28-000006dc502a /w1_slave | grep -E -o ".{0,0}t=.{0,5}" | cut -c 3-)
 echo "Temperature: $roomtemp"
 ```
+###temp_logger.py
+červená led na GPIO17
+žlutá led na GPIO18
+teploměr DS18b20 na GPIO4 (http://arduino-info.wikispaces.com/file/view/DS18B20-Wiring.jpg/543661142/DS18B20-Wiring.jpg)
+
 
 https://www.domorazek.cz/raspberry-pi-jako-ip-teplomer/
 
