@@ -38,3 +38,6 @@ echo "Temperature: $roomtemp"
 ```
 
 https://www.domorazek.cz/raspberry-pi-jako-ip-teplomer/
+
+Dispelj
+pcd8544
