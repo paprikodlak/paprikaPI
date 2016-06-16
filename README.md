@@ -1,32 +1,33 @@
 # paprikaPI
 
 
-byobu
+##byobu
 ```
 sudo apt-get install byobu, byobu-enable
 kill window: ctr+a, k
 ```
 
 
-nano
+##nano
 jump to EoF: ctrl + w + v
 
 
-cpustatus
+##cpustatus
 ```
 watch -n 1 ./cpustatus.sh
 ```
 
 
-blikblikblik:
+##blikblikblik:
 ```
 gpio mode 0 out
 gpio write 0 1
 gpio write 0 0
+
 for (( ; ; )); do gpio -g write 17 1; gpio -g write 17 0;gpio -g write 18 1; gpio -g write 18 0; done
 ```
 
-Těploměr:
+##Těploměr:
 přidat "dtoverlay=w1-gpio" na konec sudo nano /boot/config.txt, reboot
 
 teploměr id: 28-000006dc502a
@@ -39,5 +40,9 @@ echo "Temperature: $roomtemp"
 
 https://www.domorazek.cz/raspberry-pi-jako-ip-teplomer/
 
-Dispelj
+##Displej
 pcd8544
+
+##TODO:
+vizualizace naměřené teploty (python?)
+rozchodit dispelj (vnitřní teplota, vnější teplota z internetu)
