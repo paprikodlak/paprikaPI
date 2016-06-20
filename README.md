@@ -20,7 +20,7 @@ for (( ; ; )); do gpio -g write 17 1; gpio -g write 17 0;gpio -g write 18 1; gpi
 ```
 
 ##Thermometer D18B20:
-Add line "dtoverlay=w1-gpio" at the end of 'nano /boot/config.txt; reboot'
+Add line "dtoverlay=w1-gpio" at the end of ´nano /boot/config.txt; reboot´
 
 thermometer id: 28-000006dc502a
 ```
