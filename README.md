@@ -48,6 +48,8 @@ initial_setup.sh: přidat nastavení wifi
 
 přepnout teploměr GPIO na pull-up
 
+přidat do scriptů používající GPIO nastavení GPIO na správný mód
+
 vizualizace naměřené teploty (python?)
 
 rozchodit dispelj (vnitřní teplota, vnější teplota z internetu)
