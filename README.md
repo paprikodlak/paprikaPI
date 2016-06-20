@@ -1,16 +1,8 @@
 # paprikaPI
 
 
-##byobu
-```
-sudo apt-get install byobu, byobu-enable
-kill window: ctr+a, k
-```
-
-
-##nano
-jump to EoF: ctrl + w + v
-
+##initial_setup.sh
+Scritp to setup RPi and install usefull programs and hits.
 
 ##cpustatus
 ```
@@ -27,10 +19,10 @@ gpio write 0 0
 for (( ; ; )); do gpio -g write 17 1; gpio -g write 17 0;gpio -g write 18 1; gpio -g write 18 0; done
 ```
 
-##Těploměr:
-přidat "dtoverlay=w1-gpio" na konec sudo nano /boot/config.txt, reboot
+##Thermometer D18B20:
+Add line "dtoverlay=w1-gpio" at the end of 'nano /boot/config.txt; reboot'
 
-teploměr id: 28-000006dc502a
+thermometer id: 28-000006dc502a
 ```
 sudo modprobe w1-gpio
 sudo modprobe w1-therm
@@ -38,15 +30,18 @@ roomtemp=$(cat /sys/bus/w1/devices/28-000006dc502a /w1_slave | grep -E -o ".{0,0
 echo "Temperature: $roomtemp"
 ```
 ###temp_logger.py
-červená led na GPIO17
-žlutá led na GPIO18
-teploměr DS18b20 na GPIO4 (http://arduino-info.wikispaces.com/file/view/DS18B20-Wiring.jpg/543661142/DS18B20-Wiring.jpg)
+red led on GPIO17
+white led on GPIO18
+thermometer DS18b20 on GPIO4 (http://arduino-info.wikispaces.com/file/view/DS18B20-Wiring.jpg/543661142/DS18B20-Wiring.jpg)
 
 
 https://www.domorazek.cz/raspberry-pi-jako-ip-teplomer/
 
 ##Displej
 pcd8544
+
+##GPIO
+RPi GPIO layout rev2: http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/09/Raspberry-Pi-GPIO-Layout-Revision-2.png
 
 ##TODO:
 přepnout teploměr GPIO na pull-up
