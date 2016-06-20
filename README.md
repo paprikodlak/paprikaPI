@@ -30,8 +30,8 @@ roomtemp=$(cat /sys/bus/w1/devices/28-000006dc502a /w1_slave | grep -E -o ".{0,0
 echo "Temperature: $roomtemp"
 ```
 ###temp_logger.py
-red led on GPIO17
-white led on GPIO18
+red led on GPIO17,
+white led on GPIO18,
 thermometer DS18b20 on GPIO4 (http://arduino-info.wikispaces.com/file/view/DS18B20-Wiring.jpg/543661142/DS18B20-Wiring.jpg)
 
 
