@@ -49,5 +49,6 @@ https://www.domorazek.cz/raspberry-pi-jako-ip-teplomer/
 pcd8544
 
 ##TODO:
+přepnout teploměr GPIO na pull-up
 vizualizace naměřené teploty (python?)
 rozchodit dispelj (vnitřní teplota, vnější teplota z internetu)
