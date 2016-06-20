@@ -44,6 +44,7 @@ pcd8544
 RPi GPIO layout rev2: http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/09/Raspberry-Pi-GPIO-Layout-Revision-2.png
 
 ##TODO:
+initial_setup.sh: přidat nastavení wifi
 přepnout teploměr GPIO na pull-up
 vizualizace naměřené teploty (python?)
 rozchodit dispelj (vnitřní teplota, vnější teplota z internetu)
