@@ -1,6 +1,10 @@
 ﻿# paprikaPI
 
-
+##git(?)
+```
+git clone https://github.com/paprikodlak/paprikaPI
+git rebase https://github.com/paprikodlak/paprikaPI/master
+```
 ##initial_setup.sh
 Script to setup RPi, connet to wifi and install usefull programs. Also contains some random knowledge.
 
@@ -54,7 +58,7 @@ RPi GPIO layout rev2: http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/0
 A minimalistic script to configure Wi-Fi network on Raspbian system for Raspberry Pi(R) ARM computer. 
 
 
-##TODO:
+##TODO
 přepnout teploměr GPIO na pull-up
 
 přidat do scriptů používající GPIO nastavení GPIO na správný mód
