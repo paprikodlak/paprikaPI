@@ -3,7 +3,9 @@
 ##git(?)
 ```
 git clone https://github.com/paprikodlak/paprikaPI
-git rebase https://github.com/paprikodlak/paprikaPI/master
+
+git reset --hard
+git pull
 ```
 ##initial_setup.sh
 Script to setup RPi, connet to wifi and install usefull programs. Also contains some random knowledge.

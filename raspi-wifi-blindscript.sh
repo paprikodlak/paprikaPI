@@ -20,7 +20,7 @@ echo -n "Enter SSID name (or press [ENTER] to exit):"
 read SSID
 #SSID='ssid_goes_here'
 
-if [[ -z "$SSID" ]]; then
+if [[ $SSID =~ ^( ) ]]; then
    printf '%s\n' "exited."
    exit 1
 fi
@@ -32,7 +32,7 @@ fi
 echo -n "Enter encryption type (WPA for WPA-PSK/WPA2-PSK, WEP or Open):"
 read ENCRYPTION
 
-if [[ -z "$ENCRYPTION" ]]; then
+if [[ $ENCRYPTION =~ ^( ) ]]; then
    printf '%s\n' "exited."
    exit 1
 fi
@@ -43,7 +43,7 @@ fi
 echo -n "Enter password:"
 read PASSWORD
 
-if [[ -z "$PASSWORD" ]]; then
+if [[ $PASSWORD =~ ^( ) ]]; then
    printf '%s\n' "exited."
    exit 1
 fi
