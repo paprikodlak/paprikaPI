@@ -1,4 +1,4 @@
-# paprikaPI
+﻿# paprikaPI
 
 
 ##initial_setup.sh
@@ -42,6 +42,11 @@ pcd8544
 
 ##GPIO
 RPi GPIO layout rev2: http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/09/Raspberry-Pi-GPIO-Layout-Revision-2.png
+
+##raspi-wifi-blindscript
+(by @shamiao)
+A minimalistic script to configure Wi-Fi network on Raspbian system for Raspberry Pi(R) ARM computer. 
+
 
 ##TODO:
 initial_setup.sh: přidat nastavení wifi
