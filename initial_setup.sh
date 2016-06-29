@@ -5,6 +5,8 @@
 
 sudo raspi-config
 
+sudo ./raspi-wifi-blindscript.sh
+
 #byobu hotkeys:
 #kill window: ctr+a, k
 sudo apt-get -y install byobu

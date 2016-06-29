@@ -2,7 +2,7 @@
 
 
 ##initial_setup.sh
-Scritp to setup RPi and install usefull programs and hits.
+Script to setup RPi, connet to wifi and install usefull programs. Also contains some random knowledge.
 
 ##cpustatus
 ```
@@ -10,7 +10,8 @@ watch -n 1 ./cpustatus.sh
 ```
 
 
-##blikblikblik:
+##blikblikblik
+Example for how to blink with LEDs.
 ```
 gpio mode 0 out
 gpio write 0 1
@@ -19,7 +20,7 @@ gpio write 0 0
 for (( ; ; )); do gpio -g write 17 1; gpio -g write 17 0;gpio -g write 18 1; gpio -g write 18 0; done
 ```
 
-##Thermometer D18B20:
+##Thermometer D18B20
 Add line "dtoverlay=w1-gpio" at the end of `nano /boot/config.txt; reboot`
 
 thermometer id: 28-000006dc502a
@@ -39,6 +40,11 @@ https://www.domorazek.cz/raspberry-pi-jako-ip-teplomer/
 
 ##Displej
 pcd8544
+(links sorted by relevence)
+https://github.com/XavierBerger/pcd8544
+http://ikanbilis.com/98.php
+https://github.com/rm-hull/pcd8544
+
 
 ##GPIO
 RPi GPIO layout rev2: http://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/09/Raspberry-Pi-GPIO-Layout-Revision-2.png
@@ -49,12 +55,10 @@ A minimalistic script to configure Wi-Fi network on Raspbian system for Raspberr
 
 
 ##TODO:
-initial_setup.sh: přidat nastavení wifi
-
 přepnout teploměr GPIO na pull-up
 
 přidat do scriptů používající GPIO nastavení GPIO na správný mód
 
-vizualizace naměřené teploty (python?)
+vizualizace naměřené teploty (python? pandas/matplotlib?)
 
-rozchodit dispelj (vnitřní teplota, vnější teplota z internetu)
+rozchodit displej (vnitřní teplota, vnější teplota z internetu)

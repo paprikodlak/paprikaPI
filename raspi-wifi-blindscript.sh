@@ -16,16 +16,24 @@
 ###############################################################
 
 # SSID (aka. network name).
-SSID='ssid_goes_here'
+echo -n "Enter SSID name:"
+read SSID
+#SSID='ssid_goes_here'
 
 # Network encryption method.
 # * 'WPA' for WPA-PSK/WPA2-PSK (note: most Wi-Fi networks use WPA);
 # * 'WEP' for WEP;
 # * 'Open' for open network (aka. no password).
-ENCRYPTION='WPA'
+echo -n "Enter encryption type (WPA for WPA-PSK/WPA2-PSK, WEP or Open):"
+read ENCRYPTION
+
+# ENCRYPTION='WPA'
 
 # Network password. (WPA-PSK/WPA2-PSK password, or WEP key)
-PASSWORD='network_password_goes_here'
+echo -n "Enter password:"
+read PASSWORD
+
+#PASSWORD='network_password_goes_here'
 
 ###############################################################
 ####################   OK. STOP EDITING!   ####################
