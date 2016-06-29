@@ -1,9 +1,12 @@
 ﻿# paprikaPI
 
-##git(?)
+##git
+Download:
 ```
 git clone https://github.com/paprikodlak/paprikaPI
-
+```
+Redownload:
+```
 git reset --hard
 git pull
 ```
