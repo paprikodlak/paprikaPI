@@ -68,6 +68,6 @@ přepnout teploměr GPIO na pull-up
 
 přidat do scriptů používající GPIO nastavení GPIO na správný mód
 
-vizualizace naměřené teploty (python? pandas/matplotlib?)
+skritp, který vygeneruje průběh teploty a uploadne na web/vizualizace naměřené teploty (python? pandas/matplotlib?)
 
 rozchodit displej (vnitřní teplota, vnější teplota z internetu)
