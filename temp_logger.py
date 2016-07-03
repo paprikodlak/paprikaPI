@@ -39,9 +39,9 @@ while True:
     log.close()
     print(retezec_print)
     if temp<22:
-        os.system('gpio -g write 0 1 && gpio -g write 1 0')
+        os.system('gpio write 1 1 && gpio write 0 0')
     elif temp<25:
-        os.system('gpio -g write 0 0 && gpio -g write 1 0')
+        os.system('gpio write 1 0 && gpio write 0 0')
     else:
-        os.system('gpio -g write 0 0 && gpio -g write 1 1')
+        os.system('gpio write 1 0 && gpio write 0 1')
     time.sleep(300)
