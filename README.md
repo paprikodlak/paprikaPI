@@ -22,8 +22,6 @@ Example for how to blink with LEDs.
 gpio mode 0 out
 gpio write 0 1
 gpio write 0 0
-
-for (( ; ; )); do gpio -g write 17 1; gpio -g write 17 0;gpio -g write 18 1; gpio -g write 18 0; done
 ```
 
 ##Thermometer D18B20

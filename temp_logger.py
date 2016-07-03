@@ -5,6 +5,7 @@ import datetime
  
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
+os.system('gpio mode 0 out && gpio mode 1 out')
  
 base_dir = '/sys/bus/w1/devices/'
 device_folder = glob.glob(base_dir + '28*')[0]
@@ -38,9 +39,9 @@ while True:
     log.close()
     print(retezec_print)
     if temp<22:
-        os.system('gpio -g write 17 1 && gpio -g write 18 0')
+        os.system('gpio -g write 0 1 && gpio -g write 1 0')
     elif temp<25:
-        os.system('gpio -g write 17 0 && gpio -g write 18 0')
+        os.system('gpio -g write 0 0 && gpio -g write 1 0')
     else:
-        os.system('gpio -g write 17 0 && gpio -g write 18 1')
+        os.system('gpio -g write 0 0 && gpio -g write 1 1')
     time.sleep(300)
