@@ -7,8 +7,8 @@ sudo raspi-config
 
 echo -n
 echo -n "WiFi setup:"
-sudo chmod +x raspi-wifi-blindscript.sh
-sudo ./raspi-wifi-blindscript.sh
+sudo chmod +x raspi-wifi-shellscript.sh
+sudo ./raspi-wifi-shellscript.sh
 
 #byobu hotkeys:
 #kill window: ctr+a, k

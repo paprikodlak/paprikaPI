@@ -6,27 +6,30 @@
 # Project HP: https://github.com/shamiao/raspi-wifi-blindscript
 #
 # Copyright (C) 2013 Sha Miao
-# This program is released under the MIT license, see LICENSE file or 
-# <http://opensource.org/licenses/MIT> for full text.
+# This program is released under the MIT license,
+# see <http://opensource.org/licenses/MIT> for full text.
 #
-# See README for usage. 
+# raspi-wifi-shellscript v1.
+# Edited 2016 by Vít Pawlik
+# sudo chmod +x raspi-wifi-shellscript.sh 
+# to make executable.
+# run with sudo ./raspi-wifi-shellscript.sh
+# 
+# script will ask for wifi settings and then set it up. 
 
-###############################################################
-#################### PLEASE EDIT THIS PART ####################
-###############################################################
 
 # SSID (aka. network name).
 echo -n "Enter SSID name (or press [ENTER] to exit):"
 read SSID
-#SSID='ssid_goes_here'
 
-if [ -z "$SSID" ]; then
+
+if [ -z "$SSID" ]; then   #if variable SSID is empty
    printf '%s\n' "exited."
    exit 1
 fi
 
 # Network encryption method.
-# * 'WPA' for WPA-PSK/WPA2-PSK (note: most Wi-Fi networks use WPA);
+# * 'WPA' for WPA-PSK/WPA2-PSK;
 # * 'WEP' for WEP;
 # * 'Open' for open network (aka. no password).
 echo -n "Enter encryption type (WPA for WPA-PSK/WPA2-PSK, WEP or Open):"
@@ -37,8 +40,6 @@ if [ -z "$ENCRYPTION" ]; then
    exit 1
 fi
 
-# ENCRYPTION='WPA'
-
 # Network password. (WPA-PSK/WPA2-PSK password, or WEP key)
 echo -n "Enter password:"
 read PASSWORD
@@ -48,10 +49,9 @@ if [ -z "$PASSWORD" ]; then
    exit 1
 fi
 
-#PASSWORD='network_password_goes_here'
 
 ###############################################################
-####################   OK. STOP EDITING!   ####################
+####################       DONT EDIT       ####################
 ###############################################################
 
 if [ $(id -u) -ne 0 ]; then
